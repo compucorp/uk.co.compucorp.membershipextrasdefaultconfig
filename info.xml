@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <extension key="uk.co.compucorp.membershipextrasdefaultconfig" type="module">
   <file>membershipextrasdefaultconfig</file>
-  <name>Membership Extras Default Config</name>
+  <name>Membership Extras Default Configurations</name>
   <description>Default configurations for Membership Extras Extension.</description>
   <license>AGPL-3.0</license>
   <maintainer>
