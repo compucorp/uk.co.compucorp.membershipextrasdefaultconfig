@@ -4,7 +4,7 @@
  * Class to create sample contribution page for membership extras.
  */
 
-class CRM_Membershipextrasdefaultconfig_Installationsteps_SampleContributionPage {
+class CRM_Membershipextrasdefaultconfig_Setup_CreateSampleContributionPageStep {
 
   /**
    * Main method that will apply all changes.

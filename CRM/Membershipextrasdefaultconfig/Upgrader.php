@@ -1,6 +1,6 @@
 <?php
 use CRM_Membershipextrasdefaultconfig_ExtensionUtil as E;
-use CRM_Membershipextrasdefaultconfig_Installationsteps_SampleContributionPage as SampleContributionPage;
+use CRM_Membershipextrasdefaultconfig_Setup_CreateSampleContributionPageStep as CreateSampleContributionPageStep;
 
 /**
  * Collection of upgrade steps.
@@ -9,7 +9,7 @@ class CRM_Membershipextrasdefaultconfig_Upgrader extends CRM_Membershipextrasdef
 
   public function Install() {
     $steps = [
-      new SampleContributionPage(),
+      new CreateSampleContributionPageStep(),
     ];
 
     foreach ($steps as $step) {
