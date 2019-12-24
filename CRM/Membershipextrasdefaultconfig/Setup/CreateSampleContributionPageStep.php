@@ -17,7 +17,7 @@ class CRM_Membershipextrasdefaultconfig_Setup_CreateSampleContributionPageStep {
       'financial_type_id' => 1,
       'is_active' => 1,
       'currency' => "GBP",
-      'payment_processor' => $this->_get_active_payment_processors(),
+      'payment_processor' => $this->getActivePaymentProcessors(),
       'is_email_receipt' => 1,
       'receipt_from_name' => "Compuclient example receipt",
       'receipt_from_email' => "email@example.com",
@@ -28,23 +28,23 @@ class CRM_Membershipextrasdefaultconfig_Setup_CreateSampleContributionPageStep {
   /**
    * Return all active payment processor names.
    */
-  private function _get_active_payment_processors () {
-    $payment_processor_names = [];
+  private function getActivePaymentProcessors() {
+    $paymentProcessorNames = [];
 
-    $active_payment_processors = civicrm_api3('PaymentProcessor', 'get', [
+    $activePaymentProcessors = civicrm_api3('PaymentProcessor', 'get', [
       'sequential' => 1,
       'return' => ["name"],
       'is_test' => 1,
       'is_active' => 1,
     ]);
 
-    if(!$active_payment_processors['is_error']) {
-      foreach ($active_payment_processors['values'] as $payment_processor) {
-        $payment_processor_names[] = $payment_processor['name'];
+    if(!$activePaymentProcessors['is_error']) {
+      foreach ($activePaymentProcessors['values'] as $paymentProcessor) {
+        $paymentProcessorNames[] = $paymentProcessor['name'];
       }
     }
 
-    return $payment_processor_names;
+    return $paymentProcessorNames;
   }
 
 }
