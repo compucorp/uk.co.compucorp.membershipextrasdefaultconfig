@@ -8,11 +8,6 @@ class CRM_Membershipextrasdefaultconfig_Setup_CreateDummyPaymentProcessorStep {
 
   const PAYMENT_PROCESSOR_NAME = 'Test Payment Processor';
 
-  /**
-   * Main method that will apply all changes.
-   * This is called inside public function install of
-   * class CRM_Membershipextrasdefaultconfig_Upgrader
-   */
   public function apply() {
     if($this->paymentProcessorExists()) {
       return;
