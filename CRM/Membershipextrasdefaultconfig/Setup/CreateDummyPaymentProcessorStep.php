@@ -13,10 +13,7 @@ class CRM_Membershipextrasdefaultconfig_Setup_CreateDummyPaymentProcessorStep {
       return;
     }
 
-    // create entry with test details.
     $this->createDummyPaymentProcessor(TRUE);
-
-    // create entry with live details.
     $this->createDummyPaymentProcessor(FALSE);
   }
 
