@@ -13,8 +13,8 @@ class CRM_Membershipextrasdefaultconfig_Setup_CreateDummyPaymentProcessorStep {
       return;
     }
 
-    $this->createDummyPaymentProcessor(TRUE);
     $this->createDummyPaymentProcessor(FALSE);
+    $this->createDummyPaymentProcessor(TRUE);
   }
 
   /**
