@@ -6,7 +6,7 @@ use CRM_Membershipextrasdefaultconfig_Setup_CreateDummyPaymentProcessorStep as C
 /**
  * Collection of upgrade steps.
  */
-class CRM_Membershipextrasdefaultconfig_Upgrader extends CRM_Membershipextrasdefaultconfig_Upgrader_Base {
+class CRM_Membershipextrasdefaultconfig_Upgrader extends CRM_Extension_Upgrader_Base {
 
   public function Install() {
     $steps = [
